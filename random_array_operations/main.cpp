@@ -11,7 +11,7 @@ void print_array(int *array, int N);
 // this function prints the entire array.
 void sort (int *array, int N);
 //sort the elements of array
-bool find (int *array, int x);
+bool find (int *array, int x,int N);
 //find the element in the array
 
 int main() {
@@ -26,7 +26,7 @@ int main() {
     sort (array, size);
     cout << "Enter the element to find: ";
     cin >> value_to_find;
-     if (find(array, value_to_find)) {
+     if (find(array, value_to_find, size)) {
         cout << "Value " << value_to_find << " found in the array." << endl;
     } else {
         cout << "Value " << value_to_find << " not found in the array." << endl;
@@ -55,10 +55,9 @@ void sort (int *array, int N){
    cout<<endl;
 }
 
-bool find (int *array, int x){
+bool find (int *array, int x, int N){
     int i;
-    int getArrayLength = sizeof(array) / sizeof(array[0]);
-   for (int i = 0; i < getArrayLength; i++) { 
+   for (int i = 0; i < N; i++) { 
         if (array[i] == x) {
             return true; // Value found
         }
