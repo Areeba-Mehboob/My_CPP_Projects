@@ -1,0 +1,9 @@
+A program that implements a C++ class “Student” with following data members
+•	Age
+•	Roll Number
+•	GPA
+•	markSubject1
+•	marksSubject2
+•	marksSubject3
+The class should define a method/function to calculate percentage from marks obtained in three subjects.
+Finally, you’ll create objects of Student class, initialize their data members through set and get functions, calculate percentages, determine grades and print summary in the end.
